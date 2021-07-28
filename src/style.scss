@@ -1,0 +1,534 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.content {
+  margin-top: 51px;
+}
+.sidebarBlock__myphoto {
+  max-width: 225px;
+  margin-top: 20px;
+}
+
+.sidebarBlock {
+  margin-top: 31px;
+  margin-left: 60px;
+}
+p.name {
+  font-size: 21px;
+  font-weight: bold;
+  color: #fcd800;
+  margin-left: 18px;
+}
+
+ul.sidebarBlock__menu li {
+  list-style: none;
+}
+.sidebarBlock__menu li a {
+  color: #fcd800;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.sidebarBlock__menu li img {
+  padding: 8px;
+}
+
+.sidebarBlock__menu li:hover {
+  background: rgb(104, 175, 83);
+  color: white;
+  transition-property: color, background-color;
+  transition-duration: 0.5s, 0.5s;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas: "s c";
+  grid-template-rows: 12 fr;
+  grid-template-columns: 2fr 10fr;
+}
+
+.sidebar {
+  grid-area: s;
+}
+
+.content {
+  grid-area: c;
+}
+
+.profile-img img {
+  max-width: 100%;
+  opacity: 0.7;
+}
+
+.profile-img {
+  position: relative;
+  width: 700px;
+  height: 450px;
+  margin-left: 62px;
+}
+
+.pers-info {
+  position: absolute;
+  top: 37px;
+  margin-left: 40px;
+  color: #122914;
+  font-weight: bold;
+  font-size: 20px;
+  width: 612px;
+  padding: 12px;
+}
+
+h3.title {
+  font-weight: bold;
+  margin-left: 23px;
+}
+
+li.education-list {
+  margin-left: 16px;
+}
+
+span.home__info {
+  position: absolute;
+  margin-left: 345px;
+  margin-top: -330px;
+  color: #fcd800;
+  text-align: center;
+}
+
+.home__info h3,
+h5 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: -90px;
+  margin-top: -8px;
+}
+
+span.home__info h5 {
+  color: green;
+}
+
+ul.menu {
+  list-style: none;
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+ul.menu li a {
+  text-decoration: none;
+}
+
+a.back-to {
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+// pagesDetails
+
+main.project-description {
+  position: absolute;
+  top: 87px;
+  color: white;
+  width: 387px;
+  padding: 12px;
+  margin-left: 100px;
+  font-size: 16px;
+  background-color: #457792;
+}
+
+p.deploy {
+  color: #fddf39;
+  font-weight: bold;
+}
+
+//contact
+
+.contact h3 {
+  position: absolute;
+  z-index: 9;
+  padding: 26px;
+  font-size: 37px;
+  color: #fcd800;
+}
+h3.myContacts {
+  margin-top: -20px;
+}
+
+h3.help {
+  margin-top: -67px;
+}
+
+.contact__info {
+  position: absolute;
+  top: 21px;
+  width: 600px;
+  margin-left: 40px;
+}
+
+p.contact__text {
+  color: black;
+  font-size: 19px;
+  font-weight: 700;
+  text-align: center;
+  padding: 19px;
+}
+
+.contact__phone {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  color: #000;
+  top: 196px;
+  font-size: 18px;
+}
+
+.contact__phone a {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  transition-property: color, background-color;
+  transition-duration: 0.5s, 0.5s;
+}
+.contact__phone a:hover {
+  color: green;
+  transition-property: color, background-color;
+  transition-duration: 0.5s, 0.5s;
+}
+
+.contact__email {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  color: #000;
+  font-weight: bold;
+  top: 231px;
+  font-size: 18px;
+}
+
+.contact__email a {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  transition-property: color, background-color;
+  transition-duration: 0.5s, 0.5s;
+}
+
+.contact__email a:hover {
+  color: green;
+  transition-property: color, background-color;
+  transition-duration: 0.5s, 0.5s;
+}
+
+.links {
+  transition-property: color, background-color;
+  transition-duration: 0.5s, 0.5s;
+  margin-top: 222px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links__github a:hover {
+  color: white;
+  background-color: green;
+  transition-property: color, background-color;
+  transition-duration: 0.5s, 0.5s;
+}
+.links__github a {
+  text-decoration: none;
+  color: white;
+  padding: 4px 8px;
+  background: #fdc830;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.links__github {
+  margin-left: 30px;
+}
+
+.links__linkedin {
+  transition-property: color, background-color;
+  transition-duration: 0.5s, 0.5s;
+  margin-right: 409px;
+}
+.links__linkedin a:hover {
+  color: white;
+  background-color: green;
+  transition-property: color, background-color;
+  transition-duration: 0.5s, 0.5s;
+}
+
+.links__linkedin a {
+  text-decoration: none;
+  color: white;
+  padding: 4px 8px;
+  background: #fdc830;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+button.btn.btn-warning.contact-btn.btn.btn-warning {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: white;
+}
+
+img.contact__icons {
+  margin-top: -12px;
+  margin-right: 6px;
+}
+
+//portfolio
+
+.portfolio-background {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+ul.work-exp {
+  position: absolute;
+  top: 36px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #0a250a;
+  width: 640px;
+  margin-left: 30px;
+  padding: 20px;
+}
+
+h4.portfolio-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+//skills
+
+.skills-background {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 32px;
+  width: 647px;
+  margin-left: 26px;
+  padding: 12px;
+}
+
+ul.soft-skills {
+  color: #0d2b04;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.pr-skills {
+  color: #0d2b04;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.comp-skills {
+  color: #0d2b04;
+  font-weight: bold;
+  font-size: 21px;
+}
+h4.skills-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+//aboutMe
+
+img.aboutMe-background {
+  width: 100%;
+  position: absolute;
+}
+
+.edu-info {
+  top: 50px;
+  position: absolute;
+  margin-left: 25px;
+  color: #fcd800;
+  font-size: 21px;
+}
+
+.aboutMe {
+  position: absolute;
+  top: 7px;
+  color: #fcd800;
+  font-size: 20px;
+  margin-left: 15px;
+  width: 213px;
+  padding: 13px;
+}
+
+.aboutMe ul li a {
+  color: #fcd800;
+  text-decoration: none;
+  font-weight: bold;
+  transition-property: color, background-color;
+  transition-duration: 0.5s, 0.5s;
+  position: relative;
+}
+
+.aboutMe ul li a:hover {
+  color: green;
+  transition-property: color, background-color;
+  transition-duration: 0.5s, 0.5s;
+}
+
+ul.aboutMe__info li a::before {
+  content: "";
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fcd800;
+  transition: 0.2s;
+}
+
+ul.aboutMe__info li a:hover:before {
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.mobileNavigation {
+  display: none;
+}
+
+.navigation {
+  display: none;
+}
+
+// Responsive css//
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .wrapper {
+    display: block;
+  }
+
+  main.project-description {
+    top: 76px;
+  }
+
+  img.sidebarBlock__myphoto {
+    margin-left: 70px;
+  }
+
+  p.name {
+    margin-left: 88px;
+  }
+
+  ul.sidebarBlock__menu {
+    float: right;
+    margin-top: -230px;
+    clear: both;
+    margin-right: 154px;
+  }
+
+  .sidebarBlock {
+    padding: 0;
+  }
+
+  ul.work-exp {
+    top: 353px;
+    left: 37px;
+  }
+
+  .aboutMe {
+    top: 7px;
+  }
+
+  .edu-info {
+    top: 297px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    display: block;
+    padding: 0;
+  }
+
+  svg.hamburger {
+    display: flex;
+    position: absolute;
+    right: 9%;
+    top: 2%;
+  }
+  .sidebarBlock {
+    display: none;
+  }
+
+  svg.closeIcon {
+    right: 11%;
+    position: absolute;
+    top: 5%;
+    z-index: 99;
+  }
+
+  ul.sidebarBlock__menu {
+    background: green;
+    width: 100%;
+    z-index: 9;
+    padding: 27px;
+    line-height: 2;
+  }
+
+  .contact__info {
+    top: 48px;
+  }
+
+  .container.wrapper {
+    max-width: 650px;
+  }
+
+  main.project-description {
+    top: 124px;
+  }
+
+  .aboutMe {
+    top: 10px;
+  }
+  ul.pers-info {
+    top: 42px;
+  }
+
+  .pers-info {
+    top: 42px;
+  }
+
+  ul.work-exp {
+    top: 60px;
+  }
+
+  .skills {
+    top: 40px;
+  }
+
+  ul.sidebarBlock__menu li img {
+    display: none;
+  }
+
+  .profile-img {
+    margin-left: 0;
+  }
+}
